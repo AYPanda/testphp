@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Балльно-рейтинговая система СПбГЭУ</title>
+	<link rel="stylesheet" type="text/css" href="template/style.css?ver=5">
+	<link rel="stylesheet" type="text/css" href="//cdn.unecon.ru/js/fancybox2/jquery.fancybox.css">
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="template/style_ie6.css" />
+	<![endif]-->
+	<!--<script type="text/javascript" src="https://vk.com/js/api/share.js?9" charset="windows-1251"></script>-->
+	<script src="//cdn.unecon.ru/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="//cdn.unecon.ru/js/fancybox2/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="content-language" content="ru">  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26036706-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body>
+
+<div class="main">
+	<div class="head">
+		<div class="head_pict"><a href="http://unecon.ru/" target="_blank"><img src="template/logo.png" alt="" width="107"></a></div>
+		<div class="head_page_head"><h1>Балльно-рейтинговая система<br>Текущий рейтинг</h1></div>
+		<div class="head_enter"><a href="login.php">Вход в систему</a></div>
+		<div class="clear"></div>
+	</div><script type="text/javascript">
+$(document).ready(function(){
+	$('select').change(function(){
+		var s = $(this).attr("name");
+		if (s=='f') $('select[name="up"]').val('');
+		if (s=='s') $('select[name="upp"]').val('');
+		if (s=='f' || s=='up') {
+			$('select[name="g"]').val('');
+			$('select[name="upp"]').val('');
+		}
+		$('form').submit();
+	});
+});
+</script>
+<p class="itog_rating_link">
+	<a href="/rating.php?forma=1&year=2017">Итоговый рейтинг</a>
+</p>
+<form method="get" action="" >
+<div id="select_combobox">
+<ul>
+	<li><b>Форма обучения: </b><select name="f" id="id_f"><option selected value="1">очная</option>
+<option  value="3">очно-заочная (вечерняя)</option>
+</select>
+</li>
+	<li><b>Курс: </b><select name="y" id="id_y"><option  value="2014">4</option>
+<option  value="2015">3</option>
+<option  value="2016">2</option>
+<option selected value="2017">1</option>
+</select>
+</li>
+			<li><b>Направление:</b><select name="up" id="id_up"><option  value="none">Не выбрано</option>
+<option  value="11679">Бизнес-информатика</option>
+<option  value="11684">Гостиничное дело</option>
+<option  value="11680">Государственное и муниципальное управление</option>
+<option  value="11703">Зарубежное регионоведение - Азиатско-тихоокеанский регион</option>
+<option  value="11705">Зарубежное регионоведение - Зарубежная Европа</option>
+<option  value="11707">Зарубежное регионоведение - Латинская Америка</option>
+<option  value="11681">Информационная безопасность</option>
+<option  value="11676">Лингвистика</option>
+<option  value="11678">Международные отношения</option>
+<option  value="11668">Менеджмент ФБТДиЭБ</option>
+<option  value="11669">Менеджмент ФУ</option>
+<option  value="11686">Прикладная математика и информатика</option>
+<option  value="11675">Реклама и связи с общественностью</option>
+<option  value="11682">Сервис</option>
+<option  value="11689">Таможенное дело</option>
+<option  value="11670">Торговое дело</option>
+<option  value="11672">Туризм</option>
+<option  value="11688">Управление качеством</option>
+<option  value="11677">Управление персоналом</option>
+<option selected value="11667">Экономика</option>
+<option  value="11690">Экономическая безопасность</option>
+<option  value="11674">Юриспруденция</option>
+</select>
+</li>
+					<li><b>Семестр:</b><select name="s" id="id_s"><option  value="1">1</option>
+<option selected value="2">2</option>
+</select>
+</li>
+			<li><b>Группа:</b><select name="g" id="id_g"><option  value="none">Не выбрано</option>
+<option  value="all">Все группы</option>
+<option selected value="11807">Э-1701</option>
+<option  value="11808">Э-1702</option>
+<option  value="11809">Э-1703</option>
+<option  value="11810">Э-1704</option>
+<option  value="11811">Э-1705</option>
+<option  value="11812">Э-1706</option>
+<option  value="11813">Э-1707</option>
+<option  value="11814">Э-1708</option>
+<option  value="11815">Э-1709</option>
+<option  value="11816">Э-1710</option>
+<option  value="11817">Э-1711</option>
+<option  value="11818">Э-1712</option>
+<option  value="11819">Э-1713</option>
+<option  value="11820">Э-1714</option>
+<option  value="11821">Э-1715</option>
+<option  value="11822">Э-1716</option>
+<option  value="11823">Э-1717</option>
+<option  value="11824">Э-1718</option>
+<option  value="11825">Э-1719</option>
+<option  value="11826">Э-1720</option>
+</select>
+</li>
+			<li><b>Дисциплина:</b><select name="upp" id="id_upp"><option selected value="all">Все предметы</option>
+<option  value="222055">Иностранный язык</option>
+<option  value="222072">Информатика</option>
+<option  value="222071">Математический анализ</option>
+<option  value="222061">Право</option>
+<option  value="222065">Социология</option>
+<option  value="222076">Физическая культура и спорт (элективная дисциплина)</option>
+<option  value="222069">Экономическая история</option>
+<option  value="222073">Экономическая теория</option>
+</select>
+</li>
+			<li><b>Сортировать:</b>
+				<select name="sort">
+					<option selected value="fio">по алфавиту</option>
+					<option  value="ball">по баллам</option>
+				</select>
+			</li>
+				<li style="padding-right: 110px;">
+		<noscript>
+			<p>
+				<input type="submit" name="send" value="Выбрать">
+			</p>
+		</noscript>
+	</li>
+	<li>
+		<noscript>
+			<p class="js_error">
+				У вас выключен Javascript!<br>
+				Рекомендуется включить Javascript в настройках браузера!
+			</p>
+		</noscript>
+	</li>
+</ul>
+</div>
+</form>
+
+<h3>Бакалавриат-Экономика (очная) 2017. Группа: Э-1701.</h3><div><table class="list_grp" summary=""><tr class="th"><th>№</th><th>Фамилия, имя, отчество</th><th title="Иностранный язык">ИЯ<br><br>Экзамен</th><th title="Информатика">Информ.<br><br>Экзамен</th><th title="Математический анализ">Мат. Анализ<br><br>Экзамен</th><th title="Право">Право<br><br>Зачет</th><th title="Социология">Социол.<br><br>Зачет</th><th title="Физическая культура и спорт (элективная дисциплина)">Физич культ и спорт (эл дисц)<br><br>Зачет</th><th title="Экономическая история">Экон. Ист.<br><br>Экзамен</th><th title="Экономическая теория">ЭТ<br><br>Экзамен</th><th title="Экономическая теория">ЭТ<br><br>Курсовая работа</th><th>Итоговые<br>баллы</th></tr><tr><td>1</td><td align="left"><a href="stud_cd.php?stud=515354">Агафонова Алина Игоревна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>2</td><td align="left"><a href="stud_cd.php?stud=514949">Белякова Ангелина Алексеевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>3</td><td align="left"><a href="stud_cd.php?stud=514497">Вихарева Анна Борисовна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>4</td><td align="left"><a href="stud_cd.php?stud=520571">Дудниченко Максим Юрьевич</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>5</td><td align="left"><a href="stud_cd.php?stud=511493">Житова Анастасия Александровна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>6</td><td align="left"><a href="stud_cd.php?stud=511098">Каменщикова Ольга Борисовна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>7</td><td align="left"><a href="stud_cd.php?stud=508472">Ким Карина </a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>8</td><td align="left"><a href="stud_cd.php?stud=509457">Кондрашова Юлия Дмитриевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>9</td><td align="left"><a href="stud_cd.php?stud=511326">Котко Екатерина Викторовна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>10</td><td align="left"><a href="stud_cd.php?stud=511272">Кулак Никита Сергеевич</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>11</td><td align="left"><a href="stud_cd.php?stud=518771">Левашова Екатерина Андреевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>12</td><td align="left"><a href="stud_cd.php?stud=511597">Лечиева Карина </a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>13</td><td align="left"><a href="stud_cd.php?stud=519000">Мунгалова Юлия Семеновна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>14</td><td align="left"><a href="stud_cd.php?stud=508242">Обухова Анна Алексеевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>15</td><td align="left"><a href="stud_cd.php?stud=519262">Осипов Александр Николаевич</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>16</td><td align="left"><a href="stud_cd.php?stud=510917">Пантелеева Дарья Евгеньевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>17</td><td align="left"><a href="stud_cd.php?stud=510217">Сухих София Андреевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>18</td><td align="left"><a href="stud_cd.php?stud=521875">Чолкован Снежана Александровна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+<tr><td>19</td><td align="left"><a href="stud_cd.php?stud=509954">Якухина Екатерина Сергеевна</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td >0</td></tr>
+</table></div><p style="text-align: center; font-size: 12px; color: #004930;">
+	Сумма баллов и оценка в скобках - не зарегистрированы в деканате.
+</p><p style="font-size:8pt; text-align: center; "> Время запроса 0.008 секунд </p><div style="width:100px;margin:0 auto;padding-top:20px;text-align:center;">
+</div>
+	<p style="text-align: center; font-size: 11px;">
+		Тел. поддержки информационной системы: местный 5523, городской (812)458-9705
+	</p>
+</div>
+<!--LiveInternet counter--><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t52.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров и"+
+" посетителей за 24 часа' "+
+"border='0' width='0' height='0'><\/a>")
+</script><!--/LiveInternet-->
+
+
+</body>
+
+</html>
